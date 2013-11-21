@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B765D774183E5968004469DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D773183E5968004469DB /* Cocoa.framework */; };
+		B765D77E183E5968004469DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B765D77C183E5968004469DB /* InfoPlist.strings */; };
+		B765D780183E5968004469DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D77F183E5968004469DB /* main.m */; };
+		B765D784183E5968004469DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B765D782183E5968004469DB /* Credits.rtf */; };
+		B765D787183E5968004469DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D786183E5968004469DB /* AppDelegate.m */; };
+		B765D78A183E5968004469DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B765D788183E5968004469DB /* MainMenu.xib */; };
+		B765D78C183E5968004469DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B765D78B183E5968004469DB /* Images.xcassets */; };
+		B765D793183E5968004469DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D792183E5968004469DB /* XCTest.framework */; };
+		B765D794183E5968004469DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D773183E5968004469DB /* Cocoa.framework */; };
+		B765D79C183E5968004469DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B765D79A183E5968004469DB /* InfoPlist.strings */; };
+		B765D79E183E5968004469DB /* PersowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D79D183E5968004469DB /* PersowsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B765D795183E5968004469DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B765D768183E5968004469DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B765D76F183E5968004469DB;
+			remoteInfo = Persows;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B765D770183E5968004469DB /* Persows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persows.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B765D773183E5968004469DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B765D776183E5968004469DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B765D777183E5968004469DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B765D778183E5968004469DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B765D77B183E5968004469DB /* Persows-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Persows-Info.plist"; sourceTree = "<group>"; };
+		B765D77D183E5968004469DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B765D77F183E5968004469DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B765D781183E5968004469DB /* Persows-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Persows-Prefix.pch"; sourceTree = "<group>"; };
+		B765D783183E5968004469DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B765D785183E5968004469DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B765D786183E5968004469DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B765D789183E5968004469DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B765D78B183E5968004469DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B765D791183E5968004469DB /* PersowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B765D792183E5968004469DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B765D799183E5968004469DB /* PersowsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersowsTests-Info.plist"; sourceTree = "<group>"; };
+		B765D79B183E5968004469DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B765D79D183E5968004469DB /* PersowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersowsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B765D76D183E5968004469DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B765D774183E5968004469DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B765D78E183E5968004469DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B765D794183E5968004469DB /* Cocoa.framework in Frameworks */,
+				B765D793183E5968004469DB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B765D767183E5968004469DB = {
+			isa = PBXGroup;
+			children = (
+				B765D779183E5968004469DB /* Persows */,
+				B765D797183E5968004469DB /* PersowsTests */,
+				B765D772183E5968004469DB /* Frameworks */,
+				B765D771183E5968004469DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B765D771183E5968004469DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B765D770183E5968004469DB /* Persows.app */,
+				B765D791183E5968004469DB /* PersowsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B765D772183E5968004469DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B765D773183E5968004469DB /* Cocoa.framework */,
+				B765D792183E5968004469DB /* XCTest.framework */,
+				B765D775183E5968004469DB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B765D775183E5968004469DB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B765D776183E5968004469DB /* AppKit.framework */,
+				B765D777183E5968004469DB /* CoreData.framework */,
+				B765D778183E5968004469DB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B765D779183E5968004469DB /* Persows */ = {
+			isa = PBXGroup;
+			children = (
+				B765D785183E5968004469DB /* AppDelegate.h */,
+				B765D786183E5968004469DB /* AppDelegate.m */,
+				B765D788183E5968004469DB /* MainMenu.xib */,
+				B765D78B183E5968004469DB /* Images.xcassets */,
+				B765D77A183E5968004469DB /* Supporting Files */,
+			);
+			path = Persows;
+			sourceTree = "<group>";
+		};
+		B765D77A183E5968004469DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B765D77B183E5968004469DB /* Persows-Info.plist */,
+				B765D77C183E5968004469DB /* InfoPlist.strings */,
+				B765D77F183E5968004469DB /* main.m */,
+				B765D781183E5968004469DB /* Persows-Prefix.pch */,
+				B765D782183E5968004469DB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B765D797183E5968004469DB /* PersowsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B765D79D183E5968004469DB /* PersowsTests.m */,
+				B765D798183E5968004469DB /* Supporting Files */,
+			);
+			path = PersowsTests;
+			sourceTree = "<group>";
+		};
+		B765D798183E5968004469DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B765D799183E5968004469DB /* PersowsTests-Info.plist */,
+				B765D79A183E5968004469DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B765D76F183E5968004469DB /* Persows */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B765D7A1183E5968004469DB /* Build configuration list for PBXNativeTarget "Persows" */;
+			buildPhases = (
+				B765D76C183E5968004469DB /* Sources */,
+				B765D76D183E5968004469DB /* Frameworks */,
+				B765D76E183E5968004469DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Persows;
+			productName = Persows;
+			productReference = B765D770183E5968004469DB /* Persows.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B765D790183E5968004469DB /* PersowsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B765D7A4183E5968004469DB /* Build configuration list for PBXNativeTarget "PersowsTests" */;
+			buildPhases = (
+				B765D78D183E5968004469DB /* Sources */,
+				B765D78E183E5968004469DB /* Frameworks */,
+				B765D78F183E5968004469DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B765D796183E5968004469DB /* PBXTargetDependency */,
+			);
+			name = PersowsTests;
+			productName = PersowsTests;
+			productReference = B765D791183E5968004469DB /* PersowsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B765D768183E5968004469DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = sassembla;
+				TargetAttributes = {
+					B765D790183E5968004469DB = {
+						TestTargetID = B765D76F183E5968004469DB;
+					};
+				};
+			};
+			buildConfigurationList = B765D76B183E5968004469DB /* Build configuration list for PBXProject "Persows" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B765D767183E5968004469DB;
+			productRefGroup = B765D771183E5968004469DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B765D76F183E5968004469DB /* Persows */,
+				B765D790183E5968004469DB /* PersowsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B765D76E183E5968004469DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B765D77E183E5968004469DB /* InfoPlist.strings in Resources */,
+				B765D78C183E5968004469DB /* Images.xcassets in Resources */,
+				B765D784183E5968004469DB /* Credits.rtf in Resources */,
+				B765D78A183E5968004469DB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B765D78F183E5968004469DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B765D79C183E5968004469DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B765D76C183E5968004469DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B765D787183E5968004469DB /* AppDelegate.m in Sources */,
+				B765D780183E5968004469DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B765D78D183E5968004469DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B765D79E183E5968004469DB /* PersowsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B765D796183E5968004469DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B765D76F183E5968004469DB /* Persows */;
+			targetProxy = B765D795183E5968004469DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B765D77C183E5968004469DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B765D77D183E5968004469DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B765D782183E5968004469DB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B765D783183E5968004469DB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B765D788183E5968004469DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B765D789183E5968004469DB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B765D79A183E5968004469DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B765D79B183E5968004469DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B765D79F183E5968004469DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B765D7A0183E5968004469DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B765D7A2183E5968004469DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
+				INFOPLIST_FILE = "Persows/Persows-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B765D7A3183E5968004469DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
+				INFOPLIST_FILE = "Persows/Persows-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B765D7A5183E5968004469DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Persows.app/Contents/MacOS/Persows";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PersowsTests/PersowsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B765D7A6183E5968004469DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Persows.app/Contents/MacOS/Persows";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
+				INFOPLIST_FILE = "PersowsTests/PersowsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B765D76B183E5968004469DB /* Build configuration list for PBXProject "Persows" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B765D79F183E5968004469DB /* Debug */,
+				B765D7A0183E5968004469DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B765D7A1183E5968004469DB /* Build configuration list for PBXNativeTarget "Persows" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B765D7A2183E5968004469DB /* Debug */,
+				B765D7A3183E5968004469DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B765D7A4183E5968004469DB /* Build configuration list for PBXNativeTarget "PersowsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B765D7A5183E5968004469DB /* Debug */,
+				B765D7A6183E5968004469DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B765D768183E5968004469DB /* Project object */;
+}
