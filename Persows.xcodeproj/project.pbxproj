@@ -18,6 +18,17 @@
 		B765D794183E5968004469DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D773183E5968004469DB /* Cocoa.framework */; };
 		B765D79C183E5968004469DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B765D79A183E5968004469DB /* InfoPlist.strings */; };
 		B765D79E183E5968004469DB /* PersowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D79D183E5968004469DB /* PersowsTests.m */; };
+		B765D7A8183E598D004469DB /* ParseOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7A7183E598D004469DB /* ParseOSX.framework */; };
+		B765D7A9183E598D004469DB /* ParseOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7A7183E598D004469DB /* ParseOSX.framework */; };
+		B765D7AC183E5A00004469DB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7AB183E5A00004469DB /* CFNetwork.framework */; };
+		B765D7AE183E5A08004469DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7AD183E5A08004469DB /* CoreGraphics.framework */; };
+		B765D7B0183E5A0F004469DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7AF183E5A0F004469DB /* CoreLocation.framework */; };
+		B765D7B2183E5A19004469DB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B1183E5A19004469DB /* libsqlite3.dylib */; };
+		B765D7B4183E5A22004469DB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B3183E5A22004469DB /* libz.1.1.3.dylib */; };
+		B765D7B6183E5A28004469DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B5183E5A28004469DB /* QuartzCore.framework */; };
+		B765D7B8183E5A2E004469DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B7183E5A2E004469DB /* Security.framework */; };
+		B765D7BA183E5A34004469DB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B9183E5A34004469DB /* SystemConfiguration.framework */; };
+		B765D7BC183E5CD4004469DB /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B765D7A7183E598D004469DB /* ParseOSX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +40,19 @@
 			remoteInfo = Persows;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B765D7BB183E5CA5004469DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B765D7BC183E5CD4004469DB /* ParseOSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B765D770183E5968004469DB /* Persows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persows.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +74,16 @@
 		B765D799183E5968004469DB /* PersowsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersowsTests-Info.plist"; sourceTree = "<group>"; };
 		B765D79B183E5968004469DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B765D79D183E5968004469DB /* PersowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersowsTests.m; sourceTree = "<group>"; };
+		B765D7A7183E598D004469DB /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseOSX.framework; sourceTree = "<group>"; };
+		B765D7AB183E5A00004469DB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B765D7AD183E5A08004469DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B765D7AF183E5A0F004469DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B765D7B1183E5A19004469DB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B765D7B3183E5A22004469DB /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		B765D7B5183E5A28004469DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B765D7B7183E5A2E004469DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B765D7B9183E5A34004469DB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B765D7BD183E6056004469DB /* ParseSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseSettings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +91,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B765D7BA183E5A34004469DB /* SystemConfiguration.framework in Frameworks */,
+				B765D7B8183E5A2E004469DB /* Security.framework in Frameworks */,
+				B765D7B6183E5A28004469DB /* QuartzCore.framework in Frameworks */,
+				B765D7B4183E5A22004469DB /* libz.1.1.3.dylib in Frameworks */,
+				B765D7B2183E5A19004469DB /* libsqlite3.dylib in Frameworks */,
+				B765D7B0183E5A0F004469DB /* CoreLocation.framework in Frameworks */,
+				B765D7AE183E5A08004469DB /* CoreGraphics.framework in Frameworks */,
+				B765D7AC183E5A00004469DB /* CFNetwork.framework in Frameworks */,
 				B765D774183E5968004469DB /* Cocoa.framework in Frameworks */,
+				B765D7A8183E598D004469DB /* ParseOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +110,7 @@
 			files = (
 				B765D794183E5968004469DB /* Cocoa.framework in Frameworks */,
 				B765D793183E5968004469DB /* XCTest.framework in Frameworks */,
+				B765D7A9183E598D004469DB /* ParseOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +139,15 @@
 		B765D772183E5968004469DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B765D7B9183E5A34004469DB /* SystemConfiguration.framework */,
+				B765D7B7183E5A2E004469DB /* Security.framework */,
+				B765D7B5183E5A28004469DB /* QuartzCore.framework */,
+				B765D7B3183E5A22004469DB /* libz.1.1.3.dylib */,
+				B765D7B1183E5A19004469DB /* libsqlite3.dylib */,
+				B765D7AF183E5A0F004469DB /* CoreLocation.framework */,
+				B765D7AD183E5A08004469DB /* CoreGraphics.framework */,
+				B765D7AB183E5A00004469DB /* CFNetwork.framework */,
+				B765D7A7183E598D004469DB /* ParseOSX.framework */,
 				B765D773183E5968004469DB /* Cocoa.framework */,
 				B765D792183E5968004469DB /* XCTest.framework */,
 				B765D775183E5968004469DB /* Other Frameworks */,
@@ -120,6 +173,7 @@
 				B765D788183E5968004469DB /* MainMenu.xib */,
 				B765D78B183E5968004469DB /* Images.xcassets */,
 				B765D77A183E5968004469DB /* Supporting Files */,
+				B765D7BD183E6056004469DB /* ParseSettings.h */,
 			);
 			path = Persows;
 			sourceTree = "<group>";
@@ -164,6 +218,7 @@
 				B765D76C183E5968004469DB /* Sources */,
 				B765D76D183E5968004469DB /* Frameworks */,
 				B765D76E183E5968004469DB /* Resources */,
+				B765D7BB183E5CA5004469DB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -384,6 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/highvision/Desktop/Persows,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
 				INFOPLIST_FILE = "Persows/Persows-Info.plist";
@@ -397,6 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/highvision/Desktop/Persows,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
 				INFOPLIST_FILE = "Persows/Persows-Info.plist";
@@ -413,6 +476,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					/Users/highvision/Desktop/Persows,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";
@@ -435,6 +499,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					/Users/highvision/Desktop/Persows,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Persows/Persows-Prefix.pch";

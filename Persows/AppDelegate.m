@@ -8,11 +8,25 @@
 
 #import "AppDelegate.h"
 
+#import <ParseOSX/Parse.h>
+
+#import "ParseSettings.h"
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [Parse setApplicationId:PARSE_ID
+                  clientKey:PARSE_KEY];
+
+    
+//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+    
 }
 
 @end
