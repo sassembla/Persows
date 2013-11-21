@@ -29,6 +29,8 @@
 		B765D7B8183E5A2E004469DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B7183E5A2E004469DB /* Security.framework */; };
 		B765D7BA183E5A34004469DB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B765D7B9183E5A34004469DB /* SystemConfiguration.framework */; };
 		B765D7BC183E5CD4004469DB /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B765D7A7183E598D004469DB /* ParseOSX.framework */; };
+		B765D7E2183E6E20004469DB /* KSMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D7E1183E6E20004469DB /* KSMessenger.m */; };
+		B765D7E3183E6E20004469DB /* KSMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = B765D7E1183E6E20004469DB /* KSMessenger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		B765D7B7183E5A2E004469DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B765D7B9183E5A34004469DB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B765D7BD183E6056004469DB /* ParseSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseSettings.h; sourceTree = "<group>"; };
+		B765D7E0183E6E20004469DB /* KSMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMessenger.h; sourceTree = "<group>"; };
+		B765D7E1183E6E20004469DB /* KSMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMessenger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 		B765D779183E5968004469DB /* Persows */ = {
 			isa = PBXGroup;
 			children = (
+				B765D7DF183E6E20004469DB /* KSMessenger */,
 				B765D785183E5968004469DB /* AppDelegate.h */,
 				B765D786183E5968004469DB /* AppDelegate.m */,
 				B765D788183E5968004469DB /* MainMenu.xib */,
@@ -206,6 +211,15 @@
 				B765D79A183E5968004469DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B765D7DF183E6E20004469DB /* KSMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				B765D7E0183E6E20004469DB /* KSMessenger.h */,
+				B765D7E1183E6E20004469DB /* KSMessenger.m */,
+			);
+			path = KSMessenger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B765D7E2183E6E20004469DB /* KSMessenger.m in Sources */,
 				B765D787183E5968004469DB /* AppDelegate.m in Sources */,
 				B765D780183E5968004469DB /* main.m in Sources */,
 			);
@@ -317,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B765D79E183E5968004469DB /* PersowsTests.m in Sources */,
+				B765D7E3183E6E20004469DB /* KSMessenger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

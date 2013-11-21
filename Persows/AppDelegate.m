@@ -23,9 +23,27 @@
 //    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     
+    [self save];
+//    [testObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+//        NSLog(@"succeeded %d, ",succeeded);
+//        NSLog(@"error %@", error);
+//    }];
+    
+//    [testObject saveEventually:^(BOOL succeeded, NSError * error) {
+//        NSLog(@"succeeded %d, ",succeeded);
+//        NSLog(@"error %@", error);
+//    }];
+    
+    
+}
+
+- (void) save {
     PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+    
+    
+    NSError * error;
+    bool result = [testObject save:&error];
     
 }
 
