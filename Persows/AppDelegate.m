@@ -12,35 +12,53 @@
 
 #import "ParseSettings.h"
 
-@implementation AppDelegate
+#import "KSMessenger.h"
+
+
+#define PE_MASTER   (@"PE_MASTER")
+
+enum PE_MASTER_EXEC {
+    PE_MASTER_EXEC_INIT
+};
+
+
+@implementation AppDelegate {
+    KSMessenger * messenger;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [Parse setApplicationId:PARSE_ID
                   clientKey:PARSE_KEY];
 
+    messenger = [[KSMessenger alloc]initWithBodyID:self withSelector:@selector(receiver:) withName:PE_MASTER];
     
-//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    
-    [self save];
-//    [testObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
-//        NSLog(@"succeeded %d, ",succeeded);
-//        NSLog(@"error %@", error);
-//    }];
-    
-//    [testObject saveEventually:^(BOOL succeeded, NSError * error) {
-//        NSLog(@"succeeded %d, ",succeeded);
-//        NSLog(@"error %@", error);
-//    }];
-    
-    
+    [messenger callMyself:PE_MASTER_EXEC_INIT, nil];
 }
 
+
+
+- (void) receiver:(NSNotification * )notif {
+    switch ([messenger execFrom:[messenger myName] viaNotification:notif]) {
+        case PE_MASTER_EXEC_INIT:{
+            [self save];
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
+}
+
+
+
+/**
+ 保存を行う
+ */
 - (void) save {
     PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     [testObject setObject:@"bar" forKey:@"foo"];
-    
     
     NSError * error;
     bool result = [testObject save:&error];
