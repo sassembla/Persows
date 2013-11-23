@@ -18,7 +18,8 @@
 #define PE_MASTER   (@"PE_MASTER")
 
 enum PE_MASTER_EXEC {
-    PE_MASTER_EXEC_INIT
+    PE_MASTER_EXEC_INIT,
+    PE_MASTER_EXEC_GOT_ORDERS,
 };
 
 
@@ -41,8 +42,14 @@ enum PE_MASTER_EXEC {
 - (void) receiver:(NSNotification * )notif {
     switch ([messenger execFrom:[messenger myName] viaNotification:notif]) {
         case PE_MASTER_EXEC_INIT:{
-            [self loadData];
-            
+            [self loadSpecificOrder];
+            [self getSingleOrder];
+            [self getListOfOrdersWithRange];
+            [self add];
+            [self update];
+            break;
+        }
+        case PE_MASTER_EXEC_GOT_ORDERS:{
             break;
         }
             
@@ -52,32 +59,73 @@ enum PE_MASTER_EXEC {
     }
 }
 
-- (void) loadData {
-    PFQuery * query = [PFQuery queryWithClassName:@"TestObject"];
 
+
+- (void) loadSpecificOrder {
+    PFQuery * query = [PFQuery queryWithClassName:@"TestObject"];
     
-    // これはlatestを引っ張る
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *gameScore, NSError *error) {
-        // Do something with the returned PFObject in the gameScore variable.
-        NSLog(@"%@", gameScore);
+    [query getObjectInBackgroundWithId:@"b0iYSoQkKz" block:^(PFObject * gameScore, NSError * error) {
+        if (error) {
+            NSLog(@"error! %@", error);
+        } else {
+            // Do something with the returned PFObject in the gameScore variable.
+            NSLog(@"loadSpecificOrder %@", gameScore);
+        }
+    }];
+}
+
+
+- (void) getSingleOrder {
+    PFQuery * query = [PFQuery queryWithClassName:@"TestObject"];
+    [query setSkip:1];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject * obj, NSError * error) {
+        NSLog(@"getSingleOrder %@", obj);
     }];
     
-    
-//    [query getObjectInBackgroundWithId:@"xVMGPMJnOX" block:^(PFObject *gameScore, NSError *error) {
-//        // Do something with the returned PFObject in the gameScore variable.
-//        NSLog(@"%@", gameScore);
-//    }];
 }
 
 /**
- 保存を行う
+ 範囲取得
  */
-- (void) save {
-    PFObject * testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
+- (void) getListOfOrdersWithRange {
+    PFQuery * query = [PFQuery queryWithClassName:@"TestObject"];
+    
+    [query setSkip:1];
+    [query setLimit:4];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray * objects, NSError * error)
+     {
+         if (error) {
+             NSLog(@"error %@", error);
+         } else {
+             for (PFObject * obj in objects) {
+                 NSLog(@"obj %@", obj);
+             }
+             
+             [messenger callMyself:PE_MASTER_EXEC_GOT_ORDERS, nil];
+         }
+     }];
+    
+}
+
+/**
+ 追加を行う
+ */
+- (void) add {
+    PFObject * testObject = [PFObject objectWithClassName:@"Order"];
+    [testObject setObject:@"" forKey:@"foo"];
+    [testObject setValue:@"queue" forKey:@"tes"];
     
     NSError * error;
     bool result = [testObject save:&error];
+}
+
+
+- (void) update {
+    PFQuery * query = [PFQuery queryWithClassName:@"TestObject"];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject * obj, NSError * error) {
+        NSLog(@"update %@", obj);
+    }];
 }
 
 @end
