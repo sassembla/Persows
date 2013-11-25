@@ -61,6 +61,9 @@ enum PE_MASTER_EXEC {
 }
 
 - (void) fireCloudCode {
+    /**
+     これでParseのCloudCodeが直撃で着火できる
+     */
     [PFCloud callFunctionInBackground:@"hello"
                        withParameters:@{}
                                 block:^(NSString * result, NSError * error) {
