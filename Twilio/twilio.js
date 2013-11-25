@@ -1,4 +1,4 @@
-// get
+// get args
 var args = process.argv;
 
 // require the Twilio module and create a REST client
