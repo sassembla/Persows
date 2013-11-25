@@ -42,6 +42,7 @@ enum PE_MASTER_EXEC {
 - (void) receiver:(NSNotification * )notif {
     switch ([messenger execFrom:[messenger myName] viaNotification:notif]) {
         case PE_MASTER_EXEC_INIT:{
+            [self fireCloudCode];
             [self loadSpecificOrder];
             [self getSingleOrder];
             [self getListOfOrdersWithRange];
@@ -57,6 +58,17 @@ enum PE_MASTER_EXEC {
             NSAssert(false, @"should not reach here");
             break;
     }
+}
+
+- (void) fireCloudCode {
+    [PFCloud callFunctionInBackground:@"hello"
+                       withParameters:@{}
+                                block:^(NSString * result, NSError * error) {
+                                    if (!error) {
+                                        // result is @"Hello world!"
+                                    }
+                                    NSLog(@"result is %@", result);
+                                }];
 }
 
 
